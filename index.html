@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BakerFarm &mdash; Best food for you</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link href="https://fonts.googleapis.com/css?family=Cookie|Raleway" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <script src="main.js" defer></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <header class="hero-section container-fluid">
+            <nav class="nav">
+                <div class="nav_logo">
+                    <img src="img/logo2-white.png" alt="logo baker farm" class="nav__logo-img">
+                </div>
+                <div class="nav__icon-box" @click="navActive=!navActive">
+                    <i class="fas fa-align-right nav__icon"></i>
+                </div>
+                <ul class="nav__right" :class="{navActive: navActive}">
+                    
+                    <li><a href="#" class="nav__right-link active">Home</a> </li>
+                    <li><a href="#" class="nav__right-link">Our product</a></li>
+                    <li><a href="#" class="nav__right-link">Contact us</a> </li>
+                    <li><a href="#" class="nav__right-link">About us</a> </li>
+                    <li><a href="#" class="nav__right-link">Get free gift</a> </li>
+                </ul>
+            </nav>
+            <div class="hero-section__content">
+                <h1 class="heading-1 mb-md">
+                    Welcome
+                </h1>
+                <h2 class="heading-2 mb-md hero-section__sub-heading">
+                    just the best place to take friend for drink or dinner
+                </h2>
+                <a href="#" class="learn-more">Learn more</a>
+            </div>
+        </header>
+
+        <section class="feature-dishes container">
+
+            <figure class="dish-1">
+                <figcaption class="dish-1__caption mb-lg">
+                    Top desserts
+                </figcaption>
+                <a href="#" class="btn-dish">
+                    <i class="fas fa-angle-right"></i>
+                </a>
+            </figure>
+
+            <figure class="dish-2">
+                <figcaption class="dish-2__caption mb-lg">
+                    Awesome entre
+                </figcaption>
+                <a href="#" class="btn-dish">
+                    <i class="fas fa-angle-right"></i>
+                </a>
+            </figure>
+
+            <figure class="dish-3">
+                <figcaption class="dish-3__caption mb-lg">
+                    Best appetize
+                </figcaption>
+                <a href="#" class="btn-dish">
+                    <i class="fas fa-angle-right"></i>
+                </a>
+            </figure>
+        </section>
+
+        <section class="about-section container">
+            <h2 class="heading-2 heading-2--dark mb-lg">
+                <span class="about__heading">delicious & authentic</span>
+                <span>cuisine</span>
+            </h2>
+            <p class="content-style mb-md">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sapien nisi, molestie sit amet erat
+                id, rutrum pellentesque
+                arcu. Ut tortor dolor, sollicitudin id sem quis, ultrices interdum magna. Vivamus tincidunt sodales
+                tortor.
+                In libero augue, dictum in ante vitae, ultrices auctor ante. Donec ornare ac est sed scelerisque. Nam
+                pharetra
+                mattis arcu. Nam ut orci sagittis, faucibus dolor id, gravida nulla. Morbi varius sodales lectus sed
+                molestie.
+            </p>
+            <a href="#" class="learn-more__2 ">learn more</a>
+        </section>
+
+        <section class="offer-section mb-hg">
+            <h1 class="heading-1 heading-1--font1 mb-hg">hot offer</h1>
+            <p class="content-style content-style--upercase  content-style--light mb-lg container">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quibusdam error praesentium nobis
+                facere, voluptates
+                molestias quos facilis autem ipsa. voluptates molestias quos facilis autem ipsa.voluptates molestias
+                quos
+                facilis autem ipsa.
+            </p>
+            <a href="#" class="learn-more__3">
+                learn more
+            </a>
+        </section>
+
+        <section class="feature-product-section container mb-hg">
+            <div class="feature__heading mb-hg">
+                <h2 class="heading-2 heading-2--dark mb-md">
+                    more than you can imagine
+                </h2>
+                <p class="content-style content-style--upercase mar-center"> Duis viverra felis sapien, a venenatis
+                    lacus
+                    pulvinar condimentum.</p>
+            </div>
+
+            <div class="feature__cards">
+
+                <div class="feature__card">
+                    <figure class="feature__img-box">
+                        <img src="img/hot food 1.jpeg" alt="hot food 1" class="feature__img">
+                    </figure>
+                    <div class="feature__card-heading">Caprese Salad with Pesto Sauce</div>
+                    <p class="feature__card-detail">Aliquam dictum odio eget cursus tristique. Mauris ac gravida
+                        tellus.
+                        Nulla maximus lectus at purus faucibus egestas eget vel neque. Duis lectus enim, tincidunt ut
+                        velit
+                        sit amet, suscipit ultricies ligula. Nullam at lobortis arcu, sit amet pretium nisl. Nunc lacus
+                        nisl,
+                        consequat in pellentesque ac, volutpat id tellus. </p>
+                    <a href="#" class="learn-more__4 feature__btn">learn more</a>
+                </div>
+
+                <div class="feature__card">
+                    <figure class="feature__img-box">
+                        <img src="img/hot food 2.jpeg" alt="hot food 2" class="feature__img">
+                    </figure>
+                    <div class="feature__card-heading">Osso buco alla Milanese</div>
+                    <p class="feature__card-detail">Aliquam dictum odio eget cursus tristique. Mauris ac gravida
+                        tellus.
+                        Nulla maximus lectus at purus faucibus egestas eget vel neque. Duis lectus enim, tincidunt ut
+                        velit
+                        sit amet, suscipit ultricies ligula.Maecenas pretium leo ut accumsan commodo. Vestibulum
+                        vulputate
+                        volutpat volutpat. Vivamus nec quam nec ligula finibus ullamcorper vel at justo. </p>
+                    <a href="#" class="learn-more__4 feature__btn">learn more</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="video-section">
+            <div class="video__box container">
+                <h1 class="heading-1 heading-1--font1 mb-lg">video</h1>
+                <h2 class="heading-2 heading-2--font2 heading-2--light no-transform">Presentation</h2>
+                <a href="#" class="video__btn">
+                    <i class="fas fa-angle-right"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="testimonial-section mb-shg">
+
+            <div class="testimonial__box container">
+                <h2 class="heading-2 heading-2--light mb-shg">Testimonial</h2>
+
+                <div class="testimonial__each">
+                    <img src="img/friend1.jpg" alt="friend 1" class="testimonial__person mb-lg">
+                    <i class="fas fa-quote-right testimonial__quote-icon"></i>
+                    <blockquote class="content-style content-style--light mb-lg testimonial__quote">
+                        Fusce volutpat eros mi, et rutrum erat faucibus nec. Mauris ullamcorper lacinia orci. Praesent
+                        leo nisl, consequat at rhoncus
+                        in, sodales ut nisl. Morbi imperdiet vel est non hendrerit.
+
+                    </blockquote>
+                    <a href="#" class="learn-more__2 color-light">more testimonials</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="event-section container mb-shg">
+            <h2 class="heading-2 heading-2--dark event__title mb-md">news & events</h2>
+            <div class="event__card">
+                <img src="img/event 1.png" alt="event 1" class="event__card-dish">
+                <div class="event__date">
+                    <p class="event__date-day">26</p>
+                    <p class="event__date-month">march</p>
+                </div>
+                <div class="event__heading">opening big class for the Italian food</div>
+                <p class="event__detail">Aliquam dictum odio eget cursus tristique. Mauris ac gravida tellus. Nulla
+                    maximus
+                    lectus at purus faucibus egestas eget vel neque. Duis lectus enim, tincidunt ut velit sit amet,
+                    suscipit
+                    ultricies ligula..</p>
+                <a href="#" class="event__btn">read more</a>
+            </div>
+            <div class="event__card">
+                <img src="img/event 2.png" alt="event 2" class="event__card-dish">
+                <div class="event__date">
+                    <p class="event__date-day">28</p>
+                    <p class="event__date-month">march</p>
+                </div>
+                <div class="event__heading">the way to cood your resoto perfectly ever!</div>
+                <p class="event__detail">Mauris ac gravida tellus. Nulla maximus lectus at purus faucibus egestas eget
+                    vel
+                    neque. Ut velit sit amet, suscipit ultricies ligula. Nullam at lobortis arcu, sit amet pretium
+                    nisl.</p>
+                <a href="#" class="event__btn">read more</a>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container contact__box">
+                <div class="contact__info">
+                    <div class="heading-2 heading-2--dark mb-lg  ">contacts</div>
+                    <ul class="contact__detail mb-lg heading-2--font3">
+                        <li class="contact__item">
+                            <a href="#" class="contact__item-link">24 fifth Avenue 1020, Mahattan</a>
+                        </li>
+                        <li class="contact__item">
+                            <a href="#" class="contact__item-link">0934-238-323</a>
+                        </li>
+                    </ul>
+                    <div class="contact__email heading-2--font3">
+                        <i class="fas fa-envelope contact__email-icon"></i>
+                        <span>phanhuutoan9X@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="contact__copy">
+                    <img src="img/tea.jpg" alt="tea" class="contact__img ">
+                    <p class="contact__copyrights heading-2--font3">
+                        &copy; 2015 | privacy policy
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="mymodal" v-show="isActive">
+            <div class="modal__box container">
+                <h1 class="heading-1 no-transform heading-1--dark mb-hg">Read before you enter our page!</h1>
+                <h2 class="heading-2 heading-2--dark mb-hg no-transform">
+                    Please <b>update</b> your browser to the latest version for the best exprerience in our page.
+                    Thank you!
+                </h2>
+                <div class="modal__btn">
+                    <a href="#" class="modal__btn-style" @click.prevent="isActive=!isActive">I have updated</a>
+                    <a href="https://browser-update.org/update.html" target="blank" class="learn-more__4">how to update</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
